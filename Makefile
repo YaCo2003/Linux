@@ -1,6 +1,6 @@
-mybin: test.c
-	gcc test.c -o mybin -std=c99
+myprocess: myprocess.c
+	gcc -o $@ $^  -std=c99
 
 .PHONY:clean
 clean:
-	rm -f mybin
+	rm -f myprocess 
